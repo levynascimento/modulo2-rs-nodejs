@@ -15,12 +15,7 @@
     "@types/uuid": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.45.1",
-<<<<<<< Updated upstream
     "eslint": "^8.0.1",
-=======
-    "eslint": "^7.21.0",
-    "eslint-config-airbnb-base": "^15.0.0",
->>>>>>> Stashed changes
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-import-resolver-typescript": "^3.5.2",
