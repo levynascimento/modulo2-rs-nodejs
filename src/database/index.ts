@@ -6,13 +6,13 @@ const AppDataSource = new DataSource({
   port: 5432,
   username: 'docker',
   password: 'ignite',
-  database: 'database_ignite',
+  database: 'rentx',
 });
 
-AppDataSource.initialize()
-  .then(() => {
-    console.log('Data Source has been initialized!');
-  })
-  .catch(err => {
-    console.error('Error during Data Source initialization', err);
-  });
+export function createConnection(
+  host = 'database_ignite',
+): Promise<DataSource> {
+  return AppDataSource.setOptions({ host }).initialize();
+}
+
+export default AppDataSource;
