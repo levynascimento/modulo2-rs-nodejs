@@ -1,8 +1,6 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm';
 import { v4 as uuidV4 } from 'uuid';
 
-import { Category } from './Category';
-
 @Entity('cars')
 class Car {
   @PrimaryColumn()
@@ -18,7 +16,7 @@ class Car {
   daily_rate: number;
 
   @Column()
-  available = true;
+  available: boolean;
 
   @Column()
   license_plate: string;
@@ -28,9 +26,6 @@ class Car {
 
   @Column()
   brand: string;
-
-  @Column()
-  category: Category;
 
   @Column()
   category_id: string;
