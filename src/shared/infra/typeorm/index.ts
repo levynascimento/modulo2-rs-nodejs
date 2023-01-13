@@ -19,7 +19,7 @@ const options: DataSourceOptions & SeederOptions = {
   synchronize: false,
   logging: false,
   entities: [User, Category, Specification, Car],
-  migrations: ['./src/shared/infra/migration/*.ts'],
+  migrations: ['./src/shared/infra/typeorm/migrations/*.ts'],
   seeds: [MainSeeder],
 };
 
