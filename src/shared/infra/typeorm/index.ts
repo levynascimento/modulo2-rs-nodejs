@@ -3,6 +3,7 @@ import { SeederOptions } from 'typeorm-extension';
 
 import { User } from '@modules/accounts/infra/typeorm/entities/User';
 import { Car } from '@modules/cars/infra/typeorm/entities/Car';
+import { CarImage } from '@modules/cars/infra/typeorm/entities/CarImage';
 import { Category } from '@modules/cars/infra/typeorm/entities/Category';
 import { Specification } from '@modules/cars/infra/typeorm/entities/Specification';
 
@@ -18,7 +19,7 @@ const options: DataSourceOptions & SeederOptions = {
   database: 'rentx',
   synchronize: false,
   logging: false,
-  entities: [User, Category, Specification, Car],
+  entities: [User, Category, Specification, Car, CarImage],
   migrations: ['./src/shared/infra/typeorm/migrations/*.ts'],
   seeds: [MainSeeder],
 };

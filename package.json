@@ -7,7 +7,8 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli -d src/shared/infra/typeorm/index.ts",
     "test": "jest",
-    "seed": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm-extension/dist/cli/index.js seed -d src/shared/infra/typeorm/index.ts"
+    "seed": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm-extension/dist/cli/index.js seed -d src/shared/infra/typeorm/index.ts",
+    "migration:create": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli migration:create"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
