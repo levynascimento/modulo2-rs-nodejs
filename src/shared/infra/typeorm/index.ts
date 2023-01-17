@@ -6,6 +6,7 @@ import { Car } from '@modules/cars/infra/typeorm/entities/Car';
 import { CarImage } from '@modules/cars/infra/typeorm/entities/CarImage';
 import { Category } from '@modules/cars/infra/typeorm/entities/Category';
 import { Specification } from '@modules/cars/infra/typeorm/entities/Specification';
+import { Rental } from '@modules/rentals/infra/typeorm/entities/Rental';
 
 import 'reflect-metadata';
 import { MainSeeder } from './seed/MainSeeder';
@@ -19,7 +20,7 @@ const options: DataSourceOptions & SeederOptions = {
   database: 'rentx',
   synchronize: false,
   logging: false,
-  entities: [User, Category, Specification, Car, CarImage],
+  entities: [User, Category, Specification, Car, CarImage, Rental],
   migrations: ['./src/shared/infra/typeorm/migrations/*.ts'],
   seeds: [MainSeeder],
 };
