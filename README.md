@@ -53,6 +53,7 @@ Deve ser possível cadastrar um aluguel.
 O aluguel deve ter duração mínima de 24 horas.
 Não deve ser possível cadastrar um novo aluguel, caso já exista um aberto para o mesmo usuário.
 Não deve ser possível cadastrar um novo aluguel, caso já exista um aberto para o mesmo carro.
+Ao realizar o aluguel de um carro, o status deve ficar indisponível.
 
 # Devolução de um carro
 
