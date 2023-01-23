@@ -17,7 +17,7 @@ const options: DataSourceOptions & SeederOptions = {
   port: 5432,
   username: 'docker',
   password: 'ignite',
-  database: 'rentx',
+  database: process.env.NODE_ENV === 'test' ? 'rentx_test' : 'rentx',
   synchronize: false,
   logging: false,
   entities: [User, Category, Specification, Car, CarImage, Rental],
@@ -30,7 +30,9 @@ const dataSource = new DataSource(options);
 export function createConnection(
   host = 'database_ignite',
 ): Promise<DataSource> {
-  return dataSource.setOptions({ host }).initialize();
+  return dataSource
+    .setOptions({ host: process.env.NODE_ENV === 'test' ? 'localhost' : host })
+    .initialize();
 }
 
 export { dataSource };
