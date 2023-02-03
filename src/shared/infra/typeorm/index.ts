@@ -2,6 +2,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { SeederOptions } from 'typeorm-extension';
 
 import { User } from '@modules/accounts/infra/typeorm/entities/User';
+import { UserTokens } from '@modules/accounts/infra/typeorm/entities/UserTokens';
 import { Car } from '@modules/cars/infra/typeorm/entities/Car';
 import { CarImage } from '@modules/cars/infra/typeorm/entities/CarImage';
 import { Category } from '@modules/cars/infra/typeorm/entities/Category';
@@ -9,6 +10,7 @@ import { Specification } from '@modules/cars/infra/typeorm/entities/Specificatio
 import { Rental } from '@modules/rentals/infra/typeorm/entities/Rental';
 
 import 'reflect-metadata';
+
 import { MainSeeder } from './seed/MainSeeder';
 
 const options: DataSourceOptions & SeederOptions = {
@@ -20,7 +22,7 @@ const options: DataSourceOptions & SeederOptions = {
   database: process.env.NODE_ENV === 'test' ? 'rentx_test' : 'rentx',
   synchronize: false,
   logging: false,
-  entities: [User, Category, Specification, Car, CarImage, Rental],
+  entities: [User, Category, Specification, Car, CarImage, Rental, UserTokens],
   migrations: ['./src/shared/infra/typeorm/migrations/*.ts'],
   seeds: [MainSeeder],
 };
