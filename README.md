@@ -3,7 +3,7 @@
 
 # Sistema de aluguel de carros
 
-Este projeto é apresentado no curso de NodeJS da RocketSeat. Decidi fazer este projeto para estudar a construção de todo um sistema backend em ExpressJS. Esse projeto me ensinou bastante sobre conceitos de SOLID e clean code, implementação de teste unitários e de integração, utilização de docker para conteinerizar o banco de dados e aplicação, swagger para documentação da API e comunicação com banco de dados através do TypeORM. Esse projeto me ensinou o quanto uma aplicação real precisa de diversos fatores para ser performática, ser de fácil manutenção e escalável.
+Este projeto é apresentado no curso de NodeJS da RocketSeat. Decidi fazer este projeto para estudar a construção de todo um sistema backend em ExpressJS. Esse projeto me ensinou bastante sobre conceitos de SOLID e clean code, implementação de teste unitários e de integração, utilização de docker para conteinerizar o banco de dados e aplicação, autenticação de usuário através do JWT, swagger para documentação da API e comunicação com banco de dados através do TypeORM. Esse projeto me ensinou o quanto uma aplicação real precisa de diversos fatores para ser performática, ser de fácil manutenção e escalável.
 
 # Conteúdos
 
@@ -39,6 +39,10 @@ Este projeto é apresentado no curso de NodeJS da RocketSeat. Decidi fazer este 
 **Jest**
 
 *Este framework me possibilita construir testes unitários e de integração, aumentando assim a confiabilidade e redução de erros e bugs no projeto.*
+
+**JWT**
+
+*Esse é um dos tokens mais utilizados para autenticação de rotas. Neste projeto, utilizei para autenticar as rotas de criação, edição, listagem e deleção de clientes, ou seja, as rotas só funcionariam com o usuário autenticado.*
 
 # Instruções de execução
 
