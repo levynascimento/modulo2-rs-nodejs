@@ -1,4 +1,5 @@
 import { createConnection } from '../typeorm';
+import 'dotenv/config';
 import { app } from './app';
 
 createConnection();
