@@ -11,6 +11,6 @@ const diskStorage = {
 };
 
 container.registerSingleton<IStorageProvider>(
-  'LocalStorageProvider',
+  'StorageProvider',
   diskStorage[process.env.disk],
 );
