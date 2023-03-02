@@ -29,12 +29,8 @@ const options: DataSourceOptions & SeederOptions = {
 
 const dataSource = new DataSource(options);
 
-export function createConnection(
-  host = 'database_ignite',
-): Promise<DataSource> {
-  return dataSource
-    .setOptions({ host: process.env.NODE_ENV === 'test' ? 'localhost' : host })
-    .initialize();
+export function createConnection(host = 'localhost'): Promise<DataSource> {
+  return dataSource.setOptions({ host }).initialize();
 }
 
 export { dataSource };
