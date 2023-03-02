@@ -13,7 +13,7 @@ class UploadCarImagesUseCase {
   constructor(
     @inject('CarsImagesRepository')
     private carsImagesRepository: ICarsImagesRepository,
-    @inject('LocalStorageProvider')
+    @inject('StorageProvider')
     private storageProvider: IStorageProvider,
   ) {}
 
