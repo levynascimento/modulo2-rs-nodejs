@@ -41,7 +41,7 @@ jobs:
           script: |
             cd ~/app/modulo2-rs-nodejs
             yarn
-            yarn typeorm migration:run
+            ./node_modules/.bin/typeorm migration:run
             pm2 restart rentx_api
         
     
