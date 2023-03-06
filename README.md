@@ -46,12 +46,15 @@ Este projeto é apresentado no curso de NodeJS da RocketSeat. Decidi fazer este 
 *Esse é um dos tokens mais utilizados para autenticação de rotas. Neste projeto, utilizei para autenticar as rotas de criação, edição, listagem e deleção de clientes, ou seja, as rotas só funcionariam com o usuário autenticado.*
 
 **AWS**
-*Ter um servidor com infraestrutura sensacional para fazer deploy da minha aplicação com segurança e alta margem de escalabilidade é imprescindível e a AWS me ajuda nisso.
+
+*Ter um servidor com infraestrutura sensacional para fazer deploy da minha aplicação com segurança e alta margem de escalabilidade é imprescindível e a AWS me ajuda nisso.*
 
 **NGINX**
-*Esse é um dos melhores softwares de proxy reverso, por ter uma arquitetura assíncrona e orientada a eventos, ele nos dá capacidade de receber muitas requisições ao mesmo tempo, o que nos dá uma base sólida, caso o projeto escale.
+
+*Esse é um dos melhores softwares de proxy reverso, por ter uma arquitetura assíncrona e orientada a eventos, ele nos dá capacidade de receber muitas requisições ao mesmo tempo, o que nos dá uma base sólida, caso o projeto escale.*
 
 **PM2**
+
 *Esse é um gerenciador de processos, estou utilizando ele para rodar a aplicação em background, assim posso monitorar se o processo está onlie, parado ou teve algum erro.*
 
 
