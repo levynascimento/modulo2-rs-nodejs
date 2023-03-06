@@ -32,7 +32,7 @@ jobs:
           target: "~/app/modulo2-rs-nodejs"
           
       - name: Update API
-        uses: appleboy/scp-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
@@ -41,7 +41,7 @@ jobs:
           script: |
             cd ~/app/modulo2-rs-nodejs
             yarn
-            ./node_modules/.bin/typeorm migration:run
+            yarn typeorm migration:run
             pm2 restart rentx_api
         
     
